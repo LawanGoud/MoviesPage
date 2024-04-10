@@ -1,0 +1,42 @@
+.item-container {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.item-container:hover {
+  transform: translateY(-5px);
+}
+
+.item-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 0 10px;
+  color: #007bff;
+}
+
+.item-rating {
+  font-size: 14px;
+  color: #28a745;
+  padding: 0 10px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .item-container {
+    width: calc(100% - 20px);
+    margin: 0 10px 20px;
+  }
+}

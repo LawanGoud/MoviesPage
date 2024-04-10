@@ -1,0 +1,49 @@
+/* Movie List Container */
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/* Movie Item */
+.movie-item {
+  width: 200px; /* Adjust width as needed */
+  margin: 10px; /* Add margin for spacing */
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Pagination Item */
+.page-item {
+  margin: 0 5px; /* Add margin for spacing between items */
+}
+
+/* Pagination Link */
+.page-link {
+  padding: 5px 10px; /* Add padding for clickable area */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Active Page Link */
+.page-link.active {
+  background-color: #007bff; /* Active page link color */
+  color: #fff;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .movie-list-container {
+    justify-content: flex-start;
+  }
+}
